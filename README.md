@@ -56,4 +56,14 @@ Since the discovery server is running, every instance of the eureka-application
 we spin up will register with the server.  You can visit the eureka dashboard
 and view the registered services.
 
+Eureka also provides a REST API that provides all the functionally need to
+register and manage registered services.
+
 ## How do I access the applications once I have registered them?
+
+Now that you have services registered as clients, the next step is to
+spin up another client application, much like we did in the previous section.
+The main difference between this client and the previous client is going to be that
+we will configure this client to not register with the discovery server.  We will
+then add a Feign client and access the registered service using simply the service
+name.

@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@EnableFeignClients(clients = {
-		Client.class,
-})
+@EnableFeignClients
 @RestController
 public class EurekaClientApplication {
 
