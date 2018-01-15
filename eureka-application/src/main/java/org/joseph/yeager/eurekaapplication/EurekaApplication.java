@@ -21,6 +21,6 @@ public class EurekaApplication {
 
 	@GetMapping("/")
 	public String helloFromPort() {
-		return String.format("Hello from service running on port %s", SERVER_PORT);
+		return String.format("Hello from service running on port %s!", SERVER_PORT);
 	}
 }
